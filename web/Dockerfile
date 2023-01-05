@@ -42,15 +42,15 @@ RUN apt update -y && apt install -y  --no-install-recommends \
 
 
 # Download and install go 1.18
-RUN wget https://golang.org/dl/go1.18.2.linux-amd64.tar.gz
-RUN tar -xvf go1.18.2.linux-amd64.tar.gz
-RUN rm go1.18.2.linux-amd64.tar.gz
+RUN wget https://go.dev/dl/go1.19.4.linux-amd64.tar.gz
+RUN tar -xvf go1.19.4.linux-amd64.tar.gz
+RUN rm go1.19.4.linux-amd64.tar.gz
 RUN mv go /usr/local
 
 # Download geckodriver
-RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz
-RUN tar -xvf geckodriver-v0.26.0-linux64.tar.gz
-RUN rm geckodriver-v0.26.0-linux64.tar.gz
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz
+RUN tar -xvf geckodriver-v0.32.0-linux64.tar.gz
+RUN rm geckodriver-v0.32.0-linux64.tar.gz
 RUN mv geckodriver /usr/bin
 
 # ENV for Go

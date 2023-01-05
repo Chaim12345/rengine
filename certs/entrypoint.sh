@@ -52,5 +52,5 @@ fi
 cert ${DOMAIN_NAME} rengine
 
 # Print all cert files
-ls -l /certs
+ls -l 
 
